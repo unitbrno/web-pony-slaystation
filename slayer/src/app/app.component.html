@@ -9,14 +9,14 @@
   <agm-marker
     #marker
     *ngFor="let m of markers;"
-    (markerClick)="clickedMarker(marker, info)"
+    (markerClick)="clickedMarker(info)"
     [openInfoWindow]="false"
     [latitude]="m.lat"
     [longitude]="m.lng"
     [iconUrl]="m.iconUrl">
 
     <agm-info-window #info>
-      <div class="title">{{m.name}}</div>
+      <div class="map-title">{{m.name}}</div>
       <div class="info-card">
         <img [src]="m.photoUrl" [alt]="m.name" class="thumbnail">
         <div class="description">{{m.description}}<span class="more-info">More info...</span></div>
@@ -29,5 +29,18 @@
 </agm-map>
 
 <div class="trip-selector">
+  <div class="title">
+    Trip Planner
+  </div>
 
+  <div class="description" *ngIf="tripPlaces.length === 0">
+    Please select places you would like to visit...
+  </div>
+
+  <div class="list">
+    <div class="item" *ngFor="let item of tripPlaces" (click)="focusPlace(item)">
+      <span>{{item.name}}</span>
+      <i class="material-icons" (click)="removePlace(item, $event)">delete</i>
+    </div>
+  </div>
 </div>

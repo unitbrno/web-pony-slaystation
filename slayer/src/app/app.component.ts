@@ -14,9 +14,7 @@ export class AppComponent {
   lat = 49.194964;
   lng = 16.608786;
 
-  index = 4;
-
-  tripPlacesId: number[] = [];
+  tripPlaces: MarkerInter[] = [];
 
   markers: MarkerInter[] = [
     {
@@ -53,9 +51,7 @@ export class AppComponent {
 
   activeMarker = null;
 
-  clickedMarker(m: AgmMarker, content) {
-    const marker = this.markers.find(mark => mark.lat === m.latitude && mark.lng === m.longitude);
-    // marker.iconUrl = marker.iconUrl === 'assets/pnis1.png' ? 'assets/pnis2.png' : 'assets/pnis1.png';
+  clickedMarker(content) {
     if (this.activeMarker) {
       this.activeMarker.close();
       this.activeMarker = content !== this.activeMarker ? content : null;
@@ -75,16 +71,32 @@ export class AppComponent {
 
   addToTrip(m: MarkerInter, content): void {
     if(this.isInTrip(m.id)){
-      this.tripPlacesId = this.tripPlacesId.filter(item => item !== m.id);
+      this.tripPlaces = this.tripPlaces.filter(item => item.id !== m.id);
     } else {
-      this.tripPlacesId = [...this.tripPlacesId, m.id];
+      this.tripPlaces = [...this.tripPlaces, m];
     }
+    this.updateIcon(m);
     content.close();
   }
 
   isInTrip(id: number): boolean{
-    console.log('in', this.tripPlacesId.findIndex(tripId => tripId === id));
-    return this.tripPlacesId.findIndex(tripId => tripId === id) !== -1;
+    return this.tripPlaces.findIndex(tripId => tripId.id === id) !== -1;
+  }
+
+  focusPlace(m: MarkerInter): void {
+    this.lng = m.lng;
+    this.lat = m.lat;
+  }
+
+  removePlace(m: MarkerInter, event: MouseEvent): void {
+    this.tripPlaces = this.tripPlaces.filter(item => item.id !== m.id);
+    this.updateIcon(m);
+    event.stopPropagation();
+  }
+
+  private updateIcon(m: MarkerInter): void {
+    const marker = this.markers.find(mark => mark.id === m.id);
+    marker.iconUrl = marker.iconUrl === 'assets/pnis1.png' ? 'assets/pnis2.png' : 'assets/pnis1.png';
   }
 }
 
