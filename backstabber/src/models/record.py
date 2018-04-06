@@ -27,6 +27,7 @@ class Record(DB.Model):
     price = Column(String(256), nullable=True)
     photo_url = Column(String(256), nullable=True)
     categories = Column(String(512), nullable=False)
+    link = Column(String(512), nullable=True)
 
     @validates('latitude')
     def validate_latitude(self, key, latitude):
