@@ -56,17 +56,19 @@ def welcome() -> str:
     return 'Welcome to Pony Staystation, a place where no pony is safe. *EVIL LAUGHTER*'
 
 
-@FlaskApp.route('/clusterize', methods=['POST'])
+@FlaskApp.route('/clusterize', methods=['POST'], validation_exceptions=[ValidationError])
 def clusterize() -> dict:
     def valid_point(d):
         if not 'latitude' in d.keys() or not 'longitude' in d.keys():
             return False
         return True
 
-    data = request.get_json()
+    data = request.json or request.get_json()
+    if not data:
+        raise ValidationError(errors=dict(objects='empty request'))
     points = data.get('objects', [])
-    if len(points) < 2:
-        return make_response(jsonify(dict(clusters=[dict(points=points)])))
+    if len(points) < 1:
+        raise ValidationError(errors=dict(objects='cannot clusterize 0 points'))
 
     for p in points:
         if not valid_point(p):

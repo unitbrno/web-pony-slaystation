@@ -96,8 +96,7 @@ def get_clusters(points: List[dict], max_dist: float) -> List[dict]:
         num_clusters += k_increase
 
     return [
-        dict(latitude=c.centroid.lat,
-             longitude=c.centroid.lon,
+        dict(coords=dict(lat=c.centroid.lat, lon=c.centroid.lon),
              points=[p.payload for p in c.points]) for c in clusters
     ]
 
