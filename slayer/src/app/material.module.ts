@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatSidenavModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
 import { NouisliderModule } from 'ng2-nouislider';
 
 @NgModule({
@@ -13,6 +13,7 @@ import { NouisliderModule } from 'ng2-nouislider';
     NouisliderModule,
     MatSidenavModule,
     MatCardModule,
+    MatTooltipModule,
   ],
   declarations: [],
   exports:[
@@ -22,6 +23,7 @@ import { NouisliderModule } from 'ng2-nouislider';
     NouisliderModule,
     MatSidenavModule,
     MatCardModule,
+    MatTooltipModule,
   ]
 })
 export class MaterialModule { }
