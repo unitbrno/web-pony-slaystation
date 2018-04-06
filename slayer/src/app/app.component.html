@@ -19,7 +19,9 @@
     <agm-info-window #info>
       <div class="map-title">{{m.name}}</div>
       <div class="info-card">
-        <img [src]="m.photoUrl" [alt]="m.name" class="thumbnail">
+        <div class="center-cropped">
+          <img [src]="m.photoUrl" [alt]="m.name" class="thumbnail">
+        </div>
         <div class="description">{{m.description}}<span class="more-info">More info...</span></div>
       </div>
       <div class="buttons">
