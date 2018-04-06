@@ -21,7 +21,6 @@ $app-default-theme: mat-light-theme($app-default, $app-default-accent, $app-defa
 body{
   margin: 0;
   padding: 0;
-  color: white;
   font-family: 'Roboto, sans-serif'
 }
 
@@ -44,6 +43,11 @@ body{
   &:before, &:after{
     display: none;
   }
+}
+
+.gm-style-iw {
+  left: 0 !important;
+  right: 0;
 }
 
 .noUi-horizontal{

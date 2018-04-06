@@ -17,16 +17,22 @@
     [iconUrl]="m.iconUrl">
 
     <agm-info-window #info>
-      <div class="map-title">{{m.name}}</div>
-      <div class="info-card">
-        <div class="center-cropped">
-          <img [src]="m.photo_url" [alt]="m.name" class="thumbnail">
-        </div>
-        <div class="description">{{m.description}}<span class="more-info">More info...</span></div>
-      </div>
-      <div class="buttons">
-        <button mat-button (click)="addToTrip(m, info)">{{isInTrip(m.id) ? 'Remove from trip' : 'Add to trip'}}</button>
-      </div>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{m.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="m.photo_url" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>{{m.description}}</p>
+          <p *ngIf="m.price != null">Cena: {{m.price}}</p>
+          <p><a class="more-info" target="_blank" href="{{m.link}}">Více informací</a></p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="addToTrip(m, info)">{{isInTrip(m.id) ? 'Remove from trip' : 'Add to trip'}}</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
     </agm-info-window>
   </agm-marker>
 
