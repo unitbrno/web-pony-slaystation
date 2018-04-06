@@ -45,6 +45,16 @@ body{
   }
 }
 
+.gm-style-iw {
+  left: 25px !important;
+  right: 0;
+}
+
+.gm-style img {
+  max-height: 280px;
+  width: auto
+}
+
 .noUi-horizontal{
   height: 5px;
 
@@ -60,4 +70,8 @@ body{
 
 .noUi-marker-horizontal.noUi-marker-sub {
   margin-top: -5px;
+}
+
+.mat-card-avatar {
+  display:none;
 }
