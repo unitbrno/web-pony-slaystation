@@ -32,7 +32,7 @@ class Record(DB.Model):
     @validates('latitude')
     def validate_latitude(self, key, latitude):
         # latitude should be in some bounds
-        if not(49.10 <= latitude <= 49.31):
+        if not (49.10 <= latitude <= 49.31):
             raise ValidationError(
                 errors=dict(
                     latitude='Not in range <49.10, 49.31> (Brno and surrounding area)'
@@ -43,7 +43,7 @@ class Record(DB.Model):
     @validates('longitude')
     def validate_longitude(self, key, longitude):
         # longitude should be in some bounds
-        if not(16.45 <= longitude <= 16.77):
+        if not (16.45 <= longitude <= 16.77):
             raise ValidationError(
                 errors=dict(
                     longitude='Not in range <16.45, 16.77> (Brno and surrounding area)'
