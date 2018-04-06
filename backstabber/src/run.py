@@ -1,8 +1,7 @@
 from flask_restless import APIManager
 
-from app import FlaskApp, DB
-from models import EventRecord, Record, Category
-
+from app import FlaskApp, DB, ValidationError
+from models import EventRecord, Record
 
 # create database
 DB.create_all()
@@ -11,9 +10,17 @@ DB.create_all()
 manager = APIManager(FlaskApp, flask_sqlalchemy_db=DB)
 
 # API DB endpoints
-manager.create_api(EventRecord, methods=['GET', 'POST', 'PUT', 'DELETE'])
-manager.create_api(Record, methods=['GET', 'POST', 'PUT', 'DELETE'])
-manager.create_api(Category, methods=['GET', 'POST', 'PUT', 'DELETE'])
+manager.create_api(
+    EventRecord,
+    methods=['GET', 'POST', 'PUT', 'DELETE'],
+    validation_exceptions=[ValidationError],
+)
+
+manager.create_api(
+    Record,
+    methods=['GET', 'POST', 'PUT', 'DELETE'],
+    validation_exceptions = [ValidationError],
+)
 
 
 @FlaskApp.route('/', methods=['GET'])

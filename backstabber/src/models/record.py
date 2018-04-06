@@ -1,9 +1,10 @@
+from typing import List
+
 from sqlalchemy import Column, Integer, String, Text, Date, Float, ForeignKey
-from sqlalchemy.orm import relationship, validates
+from sqlalchemy.ext.hybrid import hybrid_property
+from sqlalchemy.orm import validates
 
 from app import DB, ValidationError
-
-from .category import association_table
 
 
 class Record(DB.Model):
@@ -25,26 +26,33 @@ class Record(DB.Model):
                              '(not a time when the event is happening)')
     price = Column(String(256), nullable=True)
     photo_url = Column(String(256), nullable=True)
-
-    categories = relationship(
-        "Category",
-        secondary=association_table,
-        back_populates="records"
-    )
+    categories = Column(String(512), nullable=False)
 
     @validates('latitude')
     def validate_latitude(self, key, latitude):
         # latitude should be in some bounds
         if not(49.10 <= latitude <= 49.31):
-            raise ValidationError('Latitude has to be in range <49.10, 49.31> (Brno and surrounding area)')
+            raise ValidationError(
+                errors=dict(
+                    latitude='Not in range <49.10, 49.31> (Brno and surrounding area)'
+                )
+            )
         return latitude
 
     @validates('longitude')
     def validate_longitude(self, key, longitude):
         # longitude should be in some bounds
         if not(16.45 <= longitude <= 16.77):
-            raise ValidationError('Longitude has to be in range <16.45, 16.77> (Brno and surrounding area)')
+            raise ValidationError(
+                errors=dict(
+                    longitude='Not in range <16.45, 16.77> (Brno and surrounding area)'
+                )
+            )
         return longitude
+
+    @hybrid_property
+    def category_list(self) -> List[str]:
+        return [c.strip() for c in self.categories.split(';')]
 
 
 class EventRecord(Record):

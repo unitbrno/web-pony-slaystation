@@ -23,65 +23,38 @@ class StatusCodes(object):
     DataLoss = requests.codes.INTERNAL_SERVER_ERROR
 
 
-class SlaystationExceptionMeta(type):
-    """Shortcut for creating new exceptions
-    """
-
-    def __new__(mcs, name, bases, attrs, *,
-                details=None, response_code=None):
-        return type.__new__(mcs, name, bases, attrs)
-
-    def __init__(cls, name, bases, attrs, *,
-                 details=None, response_code=None):
-        super(SlaystationExceptionMeta, cls).__init__(name, bases, attrs)
-
-
-class SlaystationException(Exception,
-                           metaclass=SlaystationExceptionMeta,
-                           response_code=StatusCodes.Internal,
-                           details=''):
+class SlaystationException(Exception):
 
     CODES = StatusCodes
 
-    def __init__(self,
-                 response_code=None,
-                 details=None,
-                 ):
-        self._details = details or 'no description'
-        self._code = response_code or SlaystationException.CODES.Internal
-        self._json = dict(description=self._details) if self._details else dict()
-        super(SlaystationException, self).__init__(self.__str__())
+    def __init__(self, message, errors):
+        super(SlaystationException, self).__init__(message)
+        self.errors = errors
+        self.status_code = SlaystationException.CODES.Internal
+        self.message = message + ' ({})'.format(self.status_code)
 
     def __str__(self):
-        """:return: String representation of this exception, for logging
-        """
-
         return "{0}: {1}".format(
             self.__class__.__name__,
-            self.json.get('description', "<NO-DESCRIPTION>")
+            self.message or 'no message'
         )
 
     @property
-    def details(self) -> Optional[str]:
-        """Detailed information about exception"""
-        return self._details
-
-    @property
-    def json(self) -> Dict[str, str]:
-        """Json form of this exception"""
-        return self._json
-
-    @property
     def code(self) -> int:
-        return self._code
+        return self.status_code
 
     @property
     def response(self):
-        return make_response(jsonify(self.json), self.code)
+        return make_response(jsonify(
+            dict(
+                message=self.message,
+                status_code=self.code,
+                errors=self.errors
+            )
+        ), self.code)
 
 
-class ValidationError(
-    SlaystationException,
-    response_code=SlaystationException.CODES.InvalidArgument
-):
-    ...
+class ValidationError(SlaystationException):
+    def __init__(self, errors):
+        super(ValidationError, self).__init__('Validation Error', errors)
+        self.status_code = SlaystationException.CODES.InvalidArgument
