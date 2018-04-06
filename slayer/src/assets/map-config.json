@@ -49,44 +49,6 @@
     ]
   },
   {
-    "featureType": "landscape.man_made",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural",
-    "elementType": "geometry.fill",
-    "stylers": [
-    ]
-  },
-  {
-    "featureType": "landscape.natural.landcover",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural.terrain",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "poi.attraction",
     "stylers": [
       {
@@ -112,14 +74,6 @@
   },
   {
     "featureType": "poi.medical",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
     "stylers": [
       {
         "visibility": "off"
@@ -239,23 +193,7 @@
     ]
   },
   {
-    "featureType": "transit",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "transit.line",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station",
     "stylers": [
       {
         "visibility": "off"
@@ -271,27 +209,8 @@
     ]
   },
   {
-    "featureType": "transit.station.bus",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station.rail",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "water",
     "stylers": [
-      {
-        "visibility": "off"
-      }
     ]
   }
 ]
