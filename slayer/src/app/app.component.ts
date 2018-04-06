@@ -18,14 +18,12 @@ export class AppComponent {
 
   index = 4;
 
-  tripPlacesId: number[] = [];
-
   markers: MarkerInter[] = [
     {
       coordinates: <LatLngLiteral>{ lat: 49.1923233, lng: 16.6089141 },
       draggable: false,
       id: 1,
-      iconUrl: 'assets/pnis2.png',
+      categories: ['architecture', 'tour'],
       photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Brno_Zeln%C3%BD_trh_a_Ditrich%C5%A1tejn_ve%C4%8Der_5.jpg/1280px-Brno_Zeln%C3%BD_trh_a_Ditrich%C5%A1tejn_ve%C4%8Der_5.jpg',
       description: 'Náměstí s trhem, kašnou, sousoším a dvěma divadly.',
       name: 'Zelný trh'
@@ -34,7 +32,7 @@ export class AppComponent {
       coordinates: <LatLngLiteral>{ lat: 49.1910184, lng: 16.6074144 },
       draggable: false,
       id: 2,
-      iconUrl: 'assets/pnis2.png',
+      categories: ['underground'],
       photoUrl: 'http://itras.cz/fotogalerie/katedrala-sv-petra-a-pavla-brno/velke/katedrala-sv-petra-a-pavla-brno-lukas-lhotecky-001.jpg',
       description: 'Nepřehlédnutelná dominanta se tyčí na kopci zvaném Petrov.',
       name: 'Katedrála sv. Petra a Pavla'
@@ -43,7 +41,7 @@ export class AppComponent {
       coordinates: <LatLngLiteral>{ lat: 49.1944928, lng: 16.599177 },
       draggable: false,
       id: 3,
-      iconUrl: 'assets/pnis2.png',
+      categories: ['nature', 'tour'],
       photoUrl: 'https://www.mistopisy.cz/modules/pruvodce/media/interest/412/interest.jpg',
       description: 'Rozlehlý komplex na vrcholu stejnojmenného kopce.',
       name: 'Hrad Špilberk'
@@ -96,7 +94,12 @@ export class AppComponent {
 
   private updateIcon(m: MarkerInter): void {
     const marker = this.markers.find(mark => mark.id === m.id);
-    marker.iconUrl = marker.iconUrl === 'assets/pnis1.png' ? 'assets/pnis2.png' : 'assets/pnis1.png';
+    const index = this.tripPlaces.findIndex(mark => mark.id === m.id);
+    if (index >= 0) {
+      marker.iconUrl = 'assets/' + marker.categories[0] + '_selected.png';
+    } else {
+      marker.iconUrl = 'assets/' + marker.categories[0] + '.png';
+    }
   }
 
   planTrip() {
@@ -138,9 +141,10 @@ interface MarkerInter {
   label?: any;
   draggable: boolean;
   id: number;
-  iconUrl: any;
   name: string;
   description: string;
+  categories: string[];
   photoUrl: string;
+  iconUrl?: string;
 }
 

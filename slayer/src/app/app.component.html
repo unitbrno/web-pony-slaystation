@@ -13,7 +13,7 @@
     [openInfoWindow]="false"
     [latitude]="m.coordinates.lat"
     [longitude]="m.coordinates.lng"
-    [iconUrl]="m.iconUrl">
+    [iconUrl]="m.iconUrl ? m.iconUrl : 'assets/' + m.categories[0] + '.png'">
 
     <agm-info-window #info>
       <div class="map-title">{{m.name}}</div>
