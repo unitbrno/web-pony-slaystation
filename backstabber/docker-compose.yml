@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+  backstabber:
+    build: .
+    image: unithack/pony_slaystation
+    command: "bash -c 'pushd src && python3.6 ./run.py'"
+    environment:
+      - PYTHONUNBUFFERED=0
+    ports:
+     - "5000:5000"
+    networks:
+     - hack_n
+
+networks:
+  hack_n:
