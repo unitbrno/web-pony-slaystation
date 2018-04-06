@@ -1,12 +1,13 @@
 $background-color: #bc3338;
+$primary-color: #d50000;
+$secondary-color: #d50000;
+@import '~@angular/material/theming';
 
 agm-map{
   height: 100vh;
 }
 
-body {
-  font-family: "Open Sans,sans-serif";
-}
+
 
 .center-cropped {
   width: 220px;
@@ -53,7 +54,18 @@ body {
   justify-content: flex-end;
 }
 
-.trip-selector{
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 25vw;
+  background-color: $primary-color;
+}
+
+
+/*.trip-selector{
   position: absolute;
   top: 10px;
   left: 10px;
@@ -99,7 +111,7 @@ body {
     }
   }
 }
-
+*/
 .slider{
   position: absolute;
   bottom: 20px;
