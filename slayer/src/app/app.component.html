@@ -38,31 +38,36 @@
   </agm-direction>
 
 </agm-map>
+<mat-sidenav-container class="example-container" color="primary">
+  <mat-sidenav mode="side" opened></mat-sidenav>
+  <mat-sidenav-content>
+    <div class="trip-selector">
+      <div class="title">
+        Trip Planner
+      </div>
 
-<div class="trip-selector">
-  <div class="title">
-    Trip Planner
-  </div>
+      <div class="description" *ngIf="tripPlaces.length === 0">
+        Please select places you would like to visit...
+      </div>
 
-  <div class="description" *ngIf="tripPlaces.length === 0">
-    Please select places you would like to visit...
-  </div>
+      <div class="list">
+        <div class="item" *ngFor="let item of tripPlaces" (click)="focusPlace(item)">
+          <span>{{item.name}}</span>
+          <i class="material-icons" (click)="removePlace(item, $event)">delete</i>
+        </div>
+      </div>
 
-  <div class="list">
-    <div class="item" *ngFor="let item of tripPlaces" (click)="focusPlace(item)">
-      <span>{{item.name}}</span>
-      <i class="material-icons" (click)="removePlace(item, $event)">delete</i>
+      <div>
+        <button mat-raised-button
+                type="button" color="primary"
+                (click)="planTrip()">
+          Get
+        </button>
+      </div>
     </div>
-  </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-  <div>
-    <button mat-raised-button
-            type="button"
-            (click)="planTrip()">
-      Get
-    </button>
-  </div>
-</div>
 
 <div class="slider">
   <nouislider [config]="config" [(ngModel)]="someRange"></nouislider>
