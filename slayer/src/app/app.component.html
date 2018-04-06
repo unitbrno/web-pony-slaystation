@@ -2,6 +2,7 @@
   [latitude]="coordinates.lat"
   [longitude]="coordinates.lng"
   [zoom]="zoom"
+  [styles]="style | async"
   [disableDefaultUI]="false"
   [zoomControl]="false"
   (mapClick)="mapClicked($event)">
@@ -59,4 +60,8 @@
       Get
     </button>
   </div>
+</div>
+
+<div class="slider">
+  <nouislider [config]="config" [(ngModel)]="someRange" (ngModelChange)="updateSlider()"></nouislider>
 </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {AgmMarker, LatLng, LatLngLiteral} from '@agm/core';
+import {AgmMarker, LatLng, LatLngLiteral, MapTypeStyle} from '@agm/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -49,6 +50,37 @@ export class AppComponent {
   ];
 
   activeMarker = null;
+
+  someRange = [1900, 2018];
+
+  config: any = {
+    connect: true,
+    range: {
+      min: 1000,
+      max: 2018
+    },
+    step: 100,
+    pips: {
+      mode: 'steps',
+      density: 20
+    },
+    tooltips: [true, true],
+    // format: {
+    //   to: function ( value ) {
+    //     return value + ',-';
+    //   },
+    //   from: function ( value ) {
+    //     return value;
+    //   }
+    // }
+  }
+
+  readonly style: Promise<MapTypeStyle[]>;
+
+  constructor(private http: HttpClient){
+    this.style = this.http.get<MapTypeStyle[]>('assets/map-config.json').toPromise<MapTypeStyle[]>();
+
+  }
 
   clickedMarker(content) {
     if (this.activeMarker) {

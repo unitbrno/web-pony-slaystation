@@ -94,3 +94,14 @@ body {
     }
   }
 }
+
+.slider{
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 20px 20px 20px;
+  background-color: rgba(0,0,0, .8);
+}

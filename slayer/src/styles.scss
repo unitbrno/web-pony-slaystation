@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~nouislider/distribute/nouislider.min.css";
+
 body{
   margin: 0;
   padding: 0;
@@ -6,4 +8,38 @@ body{
 
 .gm-style-iw > div {
   overflow: hidden !important;
+}
+
+.noUi-pips-horizontal{
+  height: auto;
+}
+
+.noUi-handle{
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px !important;
+  top: -8px !important;
+  right: -10.5px !important;
+  outline: none;
+
+  &:before, &:after{
+    display: none;
+  }
+}
+
+.noUi-horizontal{
+  height: 5px;
+
+  .noUi-tooltip{
+    padding: 5px !important;
+    border-radius: 5px;
+  }
+}
+
+.noUi-value-sub{
+  font-size: inherit;
+}
+
+.noUi-marker-horizontal.noUi-marker-sub {
+  margin-top: -5px;
 }
