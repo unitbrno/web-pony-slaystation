@@ -14,12 +14,12 @@
     [openInfoWindow]="false"
     [latitude]="m.coordinates.lat"
     [longitude]="m.coordinates.lng"
-    [iconUrl]="m.iconUrl ? m.iconUrl : 'assets/' + m.categories[0] + '.png'">
+    [iconUrl]="m.iconUrl">
 
     <agm-info-window #info>
       <div class="map-title">{{m.name}}</div>
       <div class="info-card">
-        <img [src]="m.photoUrl" [alt]="m.name" class="thumbnail">
+        <img [src]="m.photo_url" [alt]="m.name" class="thumbnail">
         <div class="description">{{m.description}}<span class="more-info">More info...</span></div>
       </div>
       <div class="buttons">
@@ -63,5 +63,5 @@
 </div>
 
 <div class="slider">
-  <nouislider [config]="config" [(ngModel)]="someRange" (ngModelChange)="updateSlider()"></nouislider>
+  <nouislider [config]="config" [(ngModel)]="someRange"></nouislider>
 </div>

@@ -7,6 +7,7 @@ import { MaterialModule } from './material.module';
 import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 import {AgmDirectionModule} from 'agm-direction';
+import { PlacesService } from './places.service';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import {AgmDirectionModule} from 'agm-direction';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    PlacesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
