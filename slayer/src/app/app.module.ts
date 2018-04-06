@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { AgmCoreModule } from '@agm/core';
+import {AgmDirectionModule} from 'agm-direction';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AgmCoreModule } from '@agm/core';
       // please get your own API key here:
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
       apiKey: 'AIzaSyBAq7Y7h9YFZuhgfAXsORx68R9hKRyeoaU'
-    })
+    }),
+    AgmDirectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AgmMarker } from '@agm/core';
+import {AgmMarker, LatLng, LatLngLiteral} from '@agm/core';
 
 @Component({
   selector: 'app-root',
@@ -11,15 +11,18 @@ export class AppComponent {
   zoom = 14;
 
   // initial center position for the map
-  lat = 49.194964;
-  lng = 16.608786;
+  coordinates = { lat: 49.194964, lng: 16.608786 };
 
   tripPlaces: MarkerInter[] = [];
+  dir = undefined;
+
+  index = 4;
+
+  tripPlacesId: number[] = [];
 
   markers: MarkerInter[] = [
     {
-      lat: 49.1923233,
-      lng: 16.6089141,
+      coordinates: <LatLngLiteral>{ lat: 49.1923233, lng: 16.6089141 },
       draggable: false,
       id: 1,
       iconUrl: 'assets/pnis2.png',
@@ -28,8 +31,7 @@ export class AppComponent {
       name: 'Zelný trh'
     },
     {
-      lat: 49.1910184,
-      lng: 16.6074144,
+      coordinates: <LatLngLiteral>{ lat: 49.1910184, lng: 16.6074144 },
       draggable: false,
       id: 2,
       iconUrl: 'assets/pnis2.png',
@@ -38,8 +40,7 @@ export class AppComponent {
       name: 'Katedrála sv. Petra a Pavla'
     },
     {
-      lat: 49.1944928,
-      lng: 16.599177,
+      coordinates: <LatLngLiteral>{ lat: 49.1944928, lng: 16.599177 },
       draggable: false,
       id: 3,
       iconUrl: 'assets/pnis2.png',
@@ -70,7 +71,7 @@ export class AppComponent {
   }
 
   addToTrip(m: MarkerInter, content): void {
-    if(this.isInTrip(m.id)){
+    if(this.isInTrip(m.id)) {
       this.tripPlaces = this.tripPlaces.filter(item => item.id !== m.id);
     } else {
       this.tripPlaces = [...this.tripPlaces, m];
@@ -84,8 +85,7 @@ export class AppComponent {
   }
 
   focusPlace(m: MarkerInter): void {
-    this.lng = m.lng;
-    this.lat = m.lat;
+    this.coordinates = m.coordinates;
   }
 
   removePlace(m: MarkerInter, event: MouseEvent): void {
@@ -98,12 +98,43 @@ export class AppComponent {
     const marker = this.markers.find(mark => mark.id === m.id);
     marker.iconUrl = marker.iconUrl === 'assets/pnis1.png' ? 'assets/pnis2.png' : 'assets/pnis1.png';
   }
+
+  planTrip() {
+    console.log(this.tripPlaces.map(place => place.coordinates));
+    this.dir = {
+      origin: this.directionStart,
+      destination: this.directionEnd,
+      waypoints: this.tripPlaces
+        .filter(item =>
+          item.coordinates !== this.directionEnd
+          && item.coordinates !== this.directionStart
+        )
+        .map(
+          place => {
+            return {
+              location: place.coordinates,
+              stopover: true
+            };
+          })
+    };
+  }
+
+  get directionStart(): LatLngLiteral {
+    return (this.tripPlaces && this.tripPlaces.length > 1)
+      ? this.tripPlaces[0].coordinates
+      : null;
+  }
+
+  get directionEnd(): LatLngLiteral {
+    return (this.tripPlaces && this.tripPlaces.length > 1)
+      ? this.tripPlaces[this.tripPlaces.length - 1].coordinates
+      : null;
+  }
 }
 
 // just an interface for type safety.
 interface MarkerInter {
-  lat: number;
-  lng: number;
+  coordinates: LatLngLiteral;
   label?: any;
   draggable: boolean;
   id: number;

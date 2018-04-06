@@ -1,6 +1,6 @@
 <agm-map
-  [latitude]="lat"
-  [longitude]="lng"
+  [latitude]="coordinates.lat"
+  [longitude]="coordinates.lng"
   [zoom]="zoom"
   [disableDefaultUI]="false"
   [zoomControl]="false"
@@ -11,8 +11,8 @@
     *ngFor="let m of markers;"
     (markerClick)="clickedMarker(info)"
     [openInfoWindow]="false"
-    [latitude]="m.lat"
-    [longitude]="m.lng"
+    [latitude]="m.coordinates.lat"
+    [longitude]="m.coordinates.lng"
     [iconUrl]="m.iconUrl">
 
     <agm-info-window #info>
@@ -26,6 +26,14 @@
       </div>
     </agm-info-window>
   </agm-marker>
+
+  <agm-direction *ngIf="dir"
+                 [origin]="dir.origin"
+                 [destination]="dir.destination"
+                 [waypoints]="dir.waypoints"
+                 travelMode="WALKING">
+  </agm-direction>
+
 </agm-map>
 
 <div class="trip-selector">
@@ -42,5 +50,13 @@
       <span>{{item.name}}</span>
       <i class="material-icons" (click)="removePlace(item, $event)">delete</i>
     </div>
+  </div>
+
+  <div>
+    <button mat-raised-button
+            type="button"
+            (click)="planTrip()">
+      Get
+    </button>
   </div>
 </div>
