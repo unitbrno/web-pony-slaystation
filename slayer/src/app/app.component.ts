@@ -37,16 +37,9 @@ export class AppComponent {
       density: 20
     },
     tooltips: [true, true],
-    // format: {
-    //   to: function ( value ) {
-    //     return value + ',-';
-    //   },
-    //   from: function ( value ) {
-    //     return value;
-    //   }
-    // }
   };
 
+  toolbarVisible = true;
   readonly style: Promise<MapTypeStyle[]>;
 
   constructor(private http: HttpClient, private placeSerives: PlacesService) {
