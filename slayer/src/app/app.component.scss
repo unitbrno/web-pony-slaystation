@@ -1,0 +1,226 @@
+$background-color: #bc3338;
+$primary-color: #d50000;
+$secondary-color: #d50000;
+
+$sidenav-color: #0091ea;
+$range-color: #f5f5f5;
+
+$text-color: #eeeeee;
+
+$footer-height: 100px;
+
+agm-map{
+  height: 100%;
+  width: 100%;
+}
+
+.center-cropped {
+  width: 220px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-right: 1em;
+}
+
+/* Set the image to fill its parent and make transparent */
+.center-cropped img {
+  max-width: 100%;
+}
+
+/deep/.noUi-value {
+  color: black !important;
+}
+
+
+.example-card {
+  max-width: 400px;
+}
+
+/deep/.map-title {
+  font-size: 20px !important;
+  text-transform: none;
+}
+/deep/nouislider {
+  margin-top: 10px !important;
+}
+
+.info-card{
+  display: flex;
+  justify-content: flex-start;
+  .description{
+    width: 200px;
+    font-size: 16px;
+
+    .more-info{
+      font-size: 12px;
+      color: gray;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover{
+        color: darken(gray, .8);
+      }
+    }
+  }
+}
+
+.map-title{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 25vw;
+  background-color: $sidenav-color;
+}
+
+.content{
+  height: 100vh;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+
+  .hide {
+    display: inline-block;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    font-size: 32px;
+    padding: 2px 5px;
+    cursor: pointer;
+    color: $text-color;
+    z-index: 999;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &.hidden{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .sidenav{
+
+    background-color: $sidenav-color;
+    padding: 26px 10px 10px 10px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    width: 300px;
+    min-width: 300px;
+    transition: all .5s;
+    opacity: 1;
+
+    &.hidden{
+      width: 0;
+      min-width: 0;
+      padding: 0;
+      opacity: 0;
+    }
+
+    .title{
+      font-size: 24px;
+      color: $text-color;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .description{
+      margin: 10px 0;
+      align-self: flex-end;
+      color: $text-color;
+      font-size: 14px;
+    }
+
+    .item{
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      opacity: 0.8;
+      cursor: pointer;
+      color: $text-color;
+
+      .name{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 5px;
+        width: 210px;
+      }
+
+      .nav-icon{
+        opacity: 0.2;
+
+        &:hover{
+          opacity: 1;
+        }
+
+        &.active{
+          opacity: 1
+        }
+      }
+
+      &:hover{
+        opacity: 1;
+      }
+
+      &:not(:last-child){
+        border-bottom: 1px solid gray;
+      }
+    }
+
+    .buttons{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+  }
+
+  .map-container{
+    position: relative;
+    height: calc(100vh - #{$footer-height});
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.filter-container{
+  background-color: $range-color;
+  height: $footer-height;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .slider-el{
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+
+  .category{
+    margin-right: 70px;
+  }
+}

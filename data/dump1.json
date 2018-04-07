@@ -1,0 +1,684 @@
+{
+  "objects": [
+    {
+      "name": "Jurkovičova vila",
+      "description": "Secesní vila, výjimečná v celosvětovém měřítku. Tato zásadní památka secesní architektury má v Brně podobný význam jako funkcionalistické vily.",
+      "longitude": 16.576142,
+      "latitude": 49.206611,
+      "photo_url": "http://www.moravska-galerie.cz/media/1736527/jurkovicova_vila_zahrada.jpg",
+      "time_period": "1.1.1906",
+      "price": "100 Kč",
+      "categories": "architecture;tour",
+      "link": "https://cs.wikipedia.org/wiki/Jurkovi%C4%8Dova_vila"
+    },
+    {
+      "name": "Vila Löw-Beer",
+      "description": "Secesní vila a život smetánky na počátku 20. století. Vila Löw-Beer je jednou z nejzásadnějších realizací v nové vilové čtvrti, která od šedesátých let 19. století vznikala na svazích Černých Polí.",
+      "longitude": 16.6114217,
+      "latitude": 49.2060541,
+      "photo_url": "http://www.pruvodcebrnem.cz/fotografie/architektonicke-pamatky/vila-low-beer/vila-low-beer.jpg",
+      "time_period": "1.1.1903",
+      "price": "150 Kč",
+      "categories": "architecture;tour",
+      "link": "https://cs.wikipedia.org/wiki/Vila_L%C3%B6w-Beer_(Brno-%C4%8Cern%C3%A1_Pole)"
+    },
+    {
+      "name": "Vila Tugendhat",
+      "description": "Nejslavnější brněnská vila stojí ve čtvrti Černá Pole. Vila manželů Grety a Fritze Tugendhatových byla vybudována v letech 1929–1930 podle návrhu architekta Ludwiga Miese van der Rohe.",
+      "longitude": 16.6138526,
+      "latitude": 49.2071412,
+      "photo_url": "https://ceskacenazaarchitekturu.cz/app/uploads/2016/04/00_015_Gardenview_Villa_Tugendhat_Copyright_David_ZidlickyHDVBNam21460727315.jpg",
+      "time_period": "1.1.1930",
+      "price": "50 Kč",
+      "categories": "architecture;tour",
+      "link": "https://cs.wikipedia.org/wiki/Vila_Tugendhat"
+    },
+    {
+      "name": "Vila Stiassni",
+      "description": "Skvostná funkcionalistická vila s tříhektarovou zahradou.",
+      "longitude": 16.5708689,
+      "latitude": 49.1969392,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Vila_Stiassni%2C_Brno.jpg/1280px-Vila_Stiassni%2C_Brno.jpg",
+      "time_period": "1.1.1929",
+      "price": "190 Kč",
+      "categories": "architecture;tour",
+      "link": "https://cs.wikipedia.org/wiki/Vila_Stiassni"
+    },
+    {
+      "name": "Kavárna Savoy",
+      "description": "Jeden ze zásadních prostorů brněnské kavárenské historie.",
+      "longitude": 16.6064991,
+      "latitude": 49.1963623,
+      "photo_url": "http://www.bam.brno.cz/data/photo/thumb/2304_4e79db9106.jpg",
+      "time_period": "1.1.1935",
+      "categories": "architecture",
+      "link": "http://www.savoy-brno.cz/"
+    },
+    {
+      "name": "Hotel Avion",
+      "description": "Hotel v samém centru města patří mezi nejužší hotely v Evropě.",
+      "longitude": 16.6058897,
+      "latitude": 49.19669,
+      "photo_url": "http://www.pruvodcebrnem.cz/fotografie/architektonicke-pamatky/hotel-avion/hotel-avion-2.jpg",
+      "time_period": "1.1.1928",
+      "categories": "architecture",
+      "link": "https://cs.wikipedia.org/wiki/Hotel_Avion"
+    },
+    {
+      "name": "Moravská banka",
+      "description": "Funkcionalistická budova na náměstí Svobody.",
+      "longitude": 16.6064071,
+      "latitude": 49.1950882,
+      "photo_url": "http://www.pruvodcebrnem.cz/fotografie/namesti-a-parky/namesti-svobody/namesti-svobody-6.jpg",
+      "time_period": "1.1.1928",
+      "categories": "architecture",
+      "link": "https://www.gotobrno.cz/misto/moravska-banka-komercni-banka/"
+    },
+    {
+      "name": "Zemanova kavárna",
+      "description": "První důsledně funkcionalistická stavba v Brně.",
+      "longitude": 16.6119145,
+      "latitude": 49.1931327,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Zemanova_kav%C3%A1rna_Brno_Koli%C5%A1t%C4%9B_celek_1.jpg/1200px-Zemanova_kav%C3%A1rna_Brno_Koli%C5%A1t%C4%9B_celek_1.jpg",
+      "time_period": "1.1.1925",
+      "categories": "architecture",
+      "link": "https://cs.wikipedia.org/wiki/Zemanova_kav%C3%A1rna"
+    },
+    {
+      "name": "Hotel International",
+      "description": "Unikátní jedenáctipatrová budova v centru města. Postfunkcionalistický hotel z druhé poloviny 20. století.",
+      "longitude": 16.60555,
+      "latitude": 49.19493,
+      "photo_url": "https://international-brno.hotel.cz/images/photos/hotel/2219/20140812155537_wiz3WO.jpg",
+      "time_period": "1.1.1962",
+      "categories": "architecture",
+      "link": "https://cs.wikipedia.org/wiki/Hotel_International_(Brno)"
+    },
+    {
+      "name": "Husův Sbor",
+      "description": "Budova Husova sboru je dokladem hledání národní identity po roce 1918 v rámci české reformace a husitství.",
+      "longitude": 16.6023053,
+      "latitude": 49.2041861,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hus%C5%AFv_sbor_%28Santo%C5%A1ka%29_2.JPG/1200px-Hus%C5%AFv_sbor_%28Santo%C5%A1ka%29_2.JPG",
+      "time_period": "1.1.1929",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Hus%C5%AFv_sbor_(Brno-Veve%C5%99%C3%AD)"
+    },
+    {
+      "name": "Synagoga Agudas achim",
+      "description": "Jediná zachovaná z původních čtyř brněnských synagog.",
+      "longitude": 16.6176832,
+      "latitude": 49.1927622,
+      "photo_url": "https://stavbaweb.dumabyt.cz/35/architectobjectfile/03/30/41/Synagoga_Brno2.jpg",
+      "time_period": "1.1.1936",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Synagoga_Agudas_achim"
+    },
+    {
+      "name": "Vojenská akademie",
+      "description": "Fuchsova inspirace tzv. crescenty v Bathu, kruhový segment podél Kounicovy ulice.",
+      "longitude": 16.594871,
+      "latitude": 49.207503,
+      "photo_url": "https://www.vojenskaskola.cz/PublishingImages/budovy/01.jpg",
+      "time_period": "1.1.2004",
+      "categories": "architecture",
+      "link": "https://cs.wikipedia.org/wiki/Vojensk%C3%A1_akademie_v_Brn%C4%9B"
+    },
+    {
+      "name": "Moravská zemská knihovna",
+      "description": "Budova vyniká krásným interiérem a skvělým výhledem. Knihovna se nachází v tzv. akademické čtvrti, v blízkosti pěti fakult Masarykovy univerzity.",
+      "longitude": 16.594387,
+      "latitude": 49.208654,
+      "photo_url": "https://www.databazeknih.cz/img/libraries/51/moravska-zemska-knihovna.jpg",
+      "time_period": "1.1.1804",
+      "categories": "architecture",
+      "link": "https://cs.wikipedia.org/wiki/Moravsk%C3%A1_zemsk%C3%A1_knihovna"
+    },
+    {
+      "name": "Hrad Špilberk",
+      "description": "Rozlehlý komplex na vrcholu stejnojmenného kopce.",
+      "longitude": 16.599177,
+      "latitude": 49.1944928,
+      "photo_url": "https://www.mistopisy.cz/modules/pruvodce/media/interest/412/interest.jpg",
+      "time_period": "1.1.1279",
+      "price": "od 50 Kč do 280 Kč",
+      "categories": "castles_churches;tour",
+      "link": "https://cs.wikipedia.org/wiki/%C5%A0pilberk"
+    },
+    {
+      "name": "Katedrála sv. Petra a Pavla",
+      "description": "Nepřehlédnutelná dominanta se tyčí na kopci zvaném Petrov.",
+      "longitude": 16.6074144,
+      "latitude": 49.1910184,
+      "photo_url": "http://itras.cz/fotogalerie/katedrala-sv-petra-a-pavla-brno/velke/katedrala-sv-petra-a-pavla-brno-lukas-lhotecky-001.jpg",
+      "time_period": "1.1.1050",
+      "price": "dospělí 40 Kč, studenti 30 Kč, děti 30 Kč",
+      "categories": "castles_churches;tour",
+      "link": "https://cs.wikipedia.org/wiki/Katedr%C3%A1la_svat%C3%A9ho_Petra_a_Pavla"
+    },
+    {
+      "name": "Zelný trh",
+      "description": "Náměstí s trhem, kašnou, sousoším a dvěma divadly.",
+      "longitude": 16.6089141,
+      "latitude": 49.1923233,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Brno_Zeln%C3%BD_trh_a_Ditrich%C5%A1tejn_ve%C4%8Der_5.jpg/1280px-Brno_Zeln%C3%BD_trh_a_Ditrich%C5%A1tejn_ve%C4%8Der_5.jpg",
+      "time_period": "1.1.1270",
+      "categories": "square",
+      "link": "https://cs.wikipedia.org/wiki/Zeln%C3%BD_trh_(Brno)"
+    },
+    {
+      "name": "Labyrint pod Zelným trhem",
+      "description": "Téměř kilometrový labyrint středověkých chodeb a sklepů.",
+      "longitude": 16.6094358,
+      "latitude": 49.1929343,
+      "photo_url": "https://ticbrno.cz/sites/default/files/foto-mista/2014/labyrint_pod_zelnym_trhem_03.jpg",
+      "time_period": "1.1.1630",
+      "categories": "underground;tour",
+      "price": "od 80 Kč do 160 Kč",
+      "link": "https://www.gotobrno.cz/misto/labyrint-pod-zelnym-trhem/"
+    },
+    {
+      "name": "Stará radnice",
+      "description": "Jedna z nejpozoruhodnějších historických budov v centru.",
+      "longitude": 16.606668,
+      "latitude": 49.1931177,
+      "photo_url": "https://ticbrno.cz/sites/default/files/foto-mista/stara-radnice-vez.jpg",
+      "time_period": "1.1.1304",
+      "categories": "architecture;tour",
+      "price": "dospělí 70 Kč, studenti/senioři/děti: 40 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Star%C3%A1_radnice_(Brno)"
+    },
+    {
+      "name": "Mincmistrovský sklep",
+      "description": "Historie mincovnictví ve sklepení pod Dominikánským náměstím.",
+      "longitude": 16.6059344,
+      "latitude": 49.1940217,
+      "photo_url": "http://img14.rajce.idnes.cz/d1403/8/8158/8158763_eb184c51114fc25096fcdf4be6503d16/images/Mincmistrovsky_sklep_026.jpg",
+      "time_period": "1.1.2010",
+      "categories": "underground;tour",
+      "price": "od 40 Kč do 80 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Mincmistrovsk%C3%BD_sklep"
+    },
+    {
+      "name": "Kostnice u sv. Jakuba",
+      "description": "Druhá největší kostnice v Evropě, hned po té pařížské.",
+      "longitude": 16.6079847,
+      "latitude": 49.1963366,
+      "photo_url": "http://www.knihyomega.cz/files/kostnice_fotografie/img-0871-up-m.jpg",
+      "time_period": "1.1.1710",
+      "categories": "underground;tour",
+      "price": "od 70 Kč do 140 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%A1_kostnice"
+    },
+    {
+      "name": "Kostel sv. Jakuba",
+      "description": "Jedna z nejcennějších památek pozdní gotiky v Česku.",
+      "longitude": 16.6061661,
+      "latitude": 49.1965908,
+      "photo_url": "https://www.czecot.cz/images/240x240/548941.jpg",
+      "time_period": "1.1.1228",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Kostel_svat%C3%A9ho_Jakuba_Star%C5%A1%C3%ADho_(Brno)"
+    },
+    {
+      "name": "Moravské náměstí",
+      "description": "Jedno z nejrozlehlejších náměstí v Brně tvoří několik částí.",
+      "longitude": 16.6043705,
+      "latitude": 49.1996886,
+      "photo_url": "https://www.informuji.cz/data_fresh/2017_265162951-moravske-namesti.jpg",
+      "time_period": "1.1.1809",
+      "categories": "square",
+      "link": "https://cs.wikipedia.org/wiki/Moravsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD_(Brno)"
+    },
+    {
+      "name": "Bazilika Nanebevzetí Panny Marie",
+      "description": "Klenot mezi gotickou architekturou na Moravě.",
+      "longitude": 16.5943042,
+      "latitude": 49.1918725,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Brno_View_48.jpg/1200px-Brno_View_48.jpg",
+      "time_period": "1.1.1323",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Bazilika_Nanebevzet%C3%AD_Panny_Marie_(Brno)"
+    },
+    {
+      "name": "Hrad Veveří",
+      "description": "Jeden z nejstarších hradních areálů v celém Česku.",
+      "longitude": 16.4617601,
+      "latitude": 49.2567688,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Hrad_Veve%C5%99%C3%AD_-_leteck%C3%BD_pohled_05_upraveny.jpg/1280px-Hrad_Veve%C5%99%C3%AD_-_leteck%C3%BD_pohled_05_upraveny.jpg",
+      "time_period": "1.1.1213",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Veve%C5%99%C3%AD_(hrad)"
+    },
+    {
+      "name": "Kostel Nalezení sv. Kříže a Kapucínská hrobka",
+      "description": "Stavby v typickém kapucínském stylu, v duchu prostoty.",
+      "longitude": 16.6099071,
+      "latitude": 49.1913594,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Brno%2C_kapuc%C3%ADnsk%C3%BD_kostel_5.jpg/1200px-Brno%2C_kapuc%C3%ADnsk%C3%BD_kostel_5.jpg",
+      "time_period": "1.1.1656",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Kostel_Nalezen%C3%AD_svat%C3%A9ho_K%C5%99%C3%AD%C5%BEe_(Brno)"
+    },
+    {
+      "name": "Kostel sv. Michala",
+      "description": "Římskokatolický kostel se nachází hned vedle Nové radnice.",
+      "longitude": 16.6043905,
+      "latitude": 49.1936181,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Kostel_svat%C3%A9ho_Michala_%2802%29.jpg/1200px-Kostel_svat%C3%A9ho_Michala_%2802%29.jpg",
+      "time_period": "1.1.1228",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Kostel_svat%C3%A9ho_Michaela_archand%C4%9Bla_(Brno)"
+    },
+    {
+      "name": "Kostel Nanebevzetí Panny Marie",
+      "description": "Pozůstatek jezuitské koleje zbourané na zač. 20. století.",
+      "longitude": 16.6100465,
+      "latitude": 49.1969572,
+      "photo_url": "http://nd06.jxs.cz/015/124/0f117cd2d9_92193196_o2.jpg",
+      "time_period": "1.1.1241",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Kostel_Nanebevzet%C3%AD_Panny_Marie_(Brno-m%C4%9Bsto)"
+    },
+    {
+      "name": "Kostel sv. Tomáše",
+      "description": "Původně pozdně gotický klášterní kostel augustiniánů.",
+      "longitude": 16.6076546,
+      "latitude": 49.1979304,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Church_of_the_Saint_Thomas_Brno.jpg/1200px-Church_of_the_Saint_Thomas_Brno.jpg",
+      "time_period": "1.1.1350",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Kostel_svat%C3%A9ho_Tom%C3%A1%C5%A1e_(Brno)"
+    },
+    {
+      "name": "Kostel sv. Tomáše",
+      "description": "Původně pozdně gotický klášterní kostel augustiniánů.",
+      "longitude": 16.6076546,
+      "latitude": 49.1979304,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Church_of_the_Saint_Thomas_Brno.jpg/1200px-Church_of_the_Saint_Thomas_Brno.jpg",
+      "time_period": "1.1.1350",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Kostel_svat%C3%A9ho_Tom%C3%A1%C5%A1e_(Brno)"
+    },
+    {
+      "name": "Kostel Jana Amose Komenského",
+      "description": "Evangelický chrám postavený ve stylu severoněmecké gotiky.",
+      "longitude": 16.6033137,
+      "latitude": 49.1975258,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Brno%2C_%C4%8Deskobratrsk%C3%BD_evangelick%C3%BD_chr%C3%A1m_Jana_Amose_Komensk%C3%A9ho_%281%29.jpg/1280px-Brno%2C_%C4%8Deskobratrsk%C3%BD_evangelick%C3%BD_chr%C3%A1m_Jana_Amose_Komensk%C3%A9ho_%281%29.jpg",
+      "time_period": "1.1.1867",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/%C4%8Ceskobratrsk%C3%BD_evangelick%C3%BD_chr%C3%A1m_Jana_Amose_Komensk%C3%A9ho"
+    },
+    {
+      "name": "Pravoslavný chrám sv. Václava",
+      "description": "Nejvýznamnější pravoslavný svatostánek v Brně.",
+      "longitude": 16.5956378,
+      "latitude": 49.1965654,
+      "photo_url": "https://www.tourismato.cz/wp-content/uploads/sites/2/2017/06/Pravoslyvn%C3%BD-kostel.jpg",
+      "time_period": "1.1.1931",
+      "categories": "castles_churches;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Pravoslavn%C3%BD_chr%C3%A1m_svat%C3%A9ho_V%C3%A1clava_(Brno)"
+    },
+    {
+      "name": "Socha Markrabě Jošta Lucemburského",
+      "description": "Jedna z nejnovějších brněnských soch vzbudila velké kontroverze.",
+      "longitude": 16.6075466,
+      "latitude": 49.1976491,
+      "photo_url": "http://www.jaroslav-rona.cz/storage/cache/images/000/883/IMG-7381-copy3,medium.1483532334.jpg",
+      "time_period": "1.1.2015",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/jaroslav-rona-odvaha/"
+    },
+    {
+      "name": "Socha spravedlnosti",
+      "description": "Další rozporuplná instalace na Moravském náměstí.",
+      "longitude": 16.6071341,
+      "latitude": 49.1975847,
+      "photo_url": "https://foto.turistika.cz/foto/11885/83140/full_362bcc_img_9981.jpg",
+      "time_period": "1.1.2010",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/marius-kotrba-spravedlnost/"
+    },
+    {
+      "name": "Rudoarmějec",
+      "description": "Bronzová socha stojí ve východní části náměstí od roku 1955.",
+      "longitude": 16.6085367,
+      "latitude": 49.1994521,
+      "photo_url": "https://foto.turistika.cz/foto/11885/104828/lrg_img_5970.jpg",
+      "time_period": "1.1.2013",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/vincenc-makovsky-rudoarmejec/"
+    },
+    {
+      "name": "Liška Bystrouška",
+      "description": "Socha titulní postavy ze světoznámé Janáčkovy opery.",
+      "longitude": 16.6028469,
+      "latitude": 49.2013175,
+      "photo_url": "https://g.denik.cz/50/9c/liska_bystrouska_osu_denik-630.jpg",
+      "time_period": "1.1.1983",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/jiri-marek-liska-bystrouska/"
+    },
+    {
+      "name": "Socha Mima",
+      "description": "Socha vytvořená v roce 1986 stojí před Bílým domem.",
+      "longitude": 16.6033122,
+      "latitude": 49.1985281,
+      "photo_url": "https://foto.turistika.cz/foto/r/900/11885/90836/lrg_img_0739.jpg",
+      "time_period": "1.1.1986",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/jiri-marek-mim/"
+    },
+    {
+      "name": "Socha Jana Skácela",
+      "description": "Socha brněnského básníka, spisovatele a překladatele.",
+      "longitude": 16.597885,
+      "latitude": 49.1938552,
+      "photo_url": "http://img20.rajce.idnes.cz/d2003/13/13323/13323108_54cc57c9ca4a0d19ec3ef29f517b2d50/images/Sochaodhalena.jpg",
+      "time_period": "1.1.2016",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/jiri-sobotka-jan-skacel/"
+    },
+    {
+      "name": "Socha Mozarta",
+      "description": "Přes dva metry vysoká socha s dětským tělem a dospělou tváří.",
+      "longitude": 16.6094019,
+      "latitude": 49.1921784,
+      "photo_url": "https://1gr.cz/fotky/idnes/08/052/c460/DMK231505_IMG_0033.jpg",
+      "time_period": "1.1.2008",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/kurt-gebauer-mozart/"
+    },
+    {
+      "name": "Brněnský orloj",
+      "description": "Nejkontroverznější brněnská umělecká instalace.",
+      "longitude": 16.6085945,
+      "latitude": 49.1947929,
+      "photo_url": "https://g.denik.cz/50/c7/orloj-svobodak2-ste_denik-630.jpg",
+      "time_period": "1.1.2010",
+      "categories": "statue",
+      "link": "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%BD_orloj"
+    },
+    {
+      "name": "Pocta T. A. Edisonovi",
+      "description": "Připomínka prvního elektricky osvětleného divadla v Evropě.",
+      "longitude": 16.6133664,
+      "latitude": 49.1952986,
+      "photo_url": "https://www.gotobrno.cz/wp-content/uploads/2017/06/edison_jan_8137_-jan-kurka-pocket-media-s-r-o-e1500761225954.jpg",
+      "time_period": "1.1.2010",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/tomas-medek-pocta-t-a-edisonovi/"
+    },
+    {
+      "name": "Pocta T. A. Edisonovi",
+      "description": "Připomínka prvního elektricky osvětleného divadla v Evropě.",
+      "longitude": 16.6133664,
+      "latitude": 49.1952986,
+      "photo_url": "https://www.gotobrno.cz/wp-content/uploads/2017/06/edison_jan_8137_-jan-kurka-pocket-media-s-r-o-e1500761225954.jpg",
+      "time_period": "1.1.2010",
+      "categories": "statue",
+      "link": "https://www.gotobrno.cz/misto/tomas-medek-pocta-t-a-edisonovi/"
+    },
+    {
+      "name": "Světelná fontána u Janáčkova divadla",
+      "description": "Fontána vytvářející světelné efekty a tvary.",
+      "longitude": 16.6089956,
+      "latitude": 49.1989762,
+      "photo_url": "http://www.centrumnews.cz/sites/default/files/clanky/2016/12/fontana_divadlo2.jpg",
+      "time_period": "1.1.2014",
+      "categories": "architecture",
+      "link": "http://encyklopedie.brna.cz/home-mmb/?acc=profil_objektu&load=1584"
+    },
+    {
+      "name": "Moravská galerie v Brně",
+      "description": "Druhé největší muzeum umění v České republice.",
+      "longitude": 16.6020324,
+      "latitude": 49.1954382,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Pra%C5%BE%C3%A1k%C5%AFv_palac.jpg",
+      "time_period": "1.1.1961",
+      "categories": "museums_galeries_theatres;tour",
+      "link": "https://cs.wikipedia.org/wiki/Moravsk%C3%A1_galerie_v_Brn%C4%9B"
+    },
+    {
+      "name": "Dům umění města Brna",
+      "description": "Dům umění města Brna je otevřená moderní instituce.",
+      "longitude": 16.6146462,
+      "latitude": 49.1963376,
+      "photo_url": "http://www.dum-umeni.cz/images/o-nas/DUMB001.jpg",
+      "time_period": "1.1.1910",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "od 40 Kč do 80 Kč",
+      "link": "https://cs.wikipedia.org/wiki/D%C5%AFm_um%C4%9Bn%C3%AD_m%C4%9Bsta_Brna"
+    },
+    {
+      "name": "Moravské zemské muzeum",
+      "description": "Druhá nejrozsáhlejší a druhá nejstarší muzejní instituce v ČR.",
+      "longitude": 16.6084581,
+      "latitude": 49.1918575,
+      "photo_url": "https://foto.turistika.cz/foto/r/550/11885/130615/lrg_img_49262.jpg",
+      "time_period": "1.1.1817",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "zdarma",
+      "link": "https://cs.wikipedia.org/wiki/Moravsk%C3%A9_zemsk%C3%A9_muzeum"
+    },
+    {
+      "name": "Muzeum města Brna",
+      "description": "Počátky městského muzea sahají až do roku 1896.",
+      "longitude": 16.5993465,
+      "latitude": 49.1948462,
+      "photo_url": "https://www.informuji.cz/data/2017_275144251-muzeum-mesta-brna.jpg",
+      "time_period": "1.1.1896",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "90 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Muzeum_m%C4%9Bsta_Brna"
+    },
+    {
+      "name": "Technické muzeum v Brně",
+      "description": "Největší technické muzeum na Moravě se nachází v Králově Poli.",
+      "longitude": 16.5814432,
+      "latitude": 49.2281574,
+      "photo_url": "http://www.technicalmuseum.cz/wp-content/uploads/2016/09/tmb_budova_navstevnici.jpg",
+      "time_period": "1.1.1936",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "od 70 Kč do 320 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Technick%C3%A9_muzeum_v_Brn%C4%9B"
+    },
+    {
+      "name": "Mendelovo muzeum",
+      "description": "Muzeum v místě, kde působil „otec genetiky“.",
+      "longitude": 16.593935,
+      "latitude": 49.1910484,
+      "photo_url": "https://jihomoravsky-kraj2014a.webnode.cz/_files/200000031-6444c65413/mendelovo-muzeum--masarykova-univerzita.jpg",
+      "time_period": "1.1.2002",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "od 40 Kč do 100 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Mendelovo_muzeum_Masarykovy_univerzity"
+    },
+    {
+      "name": "Muzeum romské kultury",
+      "description": "Unikátní muzeum, jediné svého druhu v Evropě.",
+      "longitude": 16.6233804,
+      "latitude": 49.2005855,
+      "photo_url": "http://www.cz-museums.cz/UserFiles/adresar/219/10178.JPG",
+      "time_period": "1.1.1991",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "od 40 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Muzeum_romsk%C3%A9_kultury"
+    },
+    {
+      "name": "Diecézní muzeum",
+      "description": "Stálá expozice Vita Christi – Život Kristův.",
+      "longitude": 16.6072511,
+      "latitude": 49.191436,
+      "photo_url": "https://foto.turistika.cz/foto/136136/125050/lrg_img_0101.jpg",
+      "time_period": "1.1.1993",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "od 30 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Diec%C3%A9zn%C3%AD_muzeum_v_Brn%C4%9B"
+    },
+    {
+      "name": "Letohrádek Mitrovských",
+      "description": "V letohrádku se konají výstavy, koncerty a další akce.",
+      "longitude": 16.5890314,
+      "latitude": 49.1884148,
+      "photo_url": "https://www.gotobrno.cz/wp-content/uploads/2017/06/letohradekmitrovskych-3230-e1501364419805.jpg",
+      "time_period": "1.1.1794",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "od 30 Kč",
+      "link": "https://cs.wikipedia.org/wiki/Letohr%C3%A1dek_Mitrovsk%C3%BDch"
+    },
+    {
+      "name": "Fait Gallery",
+      "description": "Jedna z nejvýznamnějších soukromých galerií v Brně.",
+      "longitude": 16.6161923,
+      "latitude": 49.1872161,
+      "photo_url": "https://www.faitgallery.com/tl_files/novinky/FG_3.jpg",
+      "time_period": "1.1.2016",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "zdarma",
+      "link": "https://www.faitgallery.com/"
+    },
+    {
+      "name": "Galerie TIC",
+      "description": "Galerie zaměřené na prezentaci současného umění.",
+      "longitude": 16.6084686,
+      "latitude": 49.1933498,
+      "photo_url": "https://ticbrno.cz/sites/default/files/provozy-saly/2016/galerie_tic_1200.jpg",
+      "time_period": "1.1.1967",
+      "categories": "museums_galeries_theatres;tour",
+      "price": "zdarma",
+      "link": "http://galerie-tic.cz/"
+    },
+    {
+      "name": "Náměstí Svobody",
+      "description": "Nejvýznamnější a nejživější brněnské náměstí.",
+      "longitude": 16.608218,
+      "latitude": 49.1950705,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Brno-Freiheitsplatz2.jpg/1200px-Brno-Freiheitsplatz2.jpg",
+      "time_period": "1.1.1230",
+      "categories": "square",
+      "link": "https://cs.wikipedia.org/wiki/N%C3%A1m%C4%9Bst%C3%AD_Svobody_(Brno)"
+    },
+    {
+      "name": "Jakubské náměstí",
+      "description": "Jedinečné místo s výjimečnou atmosférou.",
+      "longitude": 16.6061801,
+      "latitude": 49.1968004,
+      "photo_url": "https://1gr.cz/fotky/idnes/14/101/cl5/LVA4d500d_220116_3271252.jpg",
+      "time_period": "1.1.1228",
+      "categories": "square",
+      "link": "https://cs.wikipedia.org/wiki/Jakubsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD_(Brno)"
+    },
+    {
+      "name": "Janáčkovo divadlo",
+      "description": "V době otevření bylo Janáčkovo divadlo největším u nás.",
+      "longitude": 16.6111714,
+      "latitude": 49.1984585,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Brno%2C_Jan%C3%A1%C4%8Dkovo_divadlo%2C_park_p%C5%99ed_divadlem_%286913%29.jpg/1280px-Brno%2C_Jan%C3%A1%C4%8Dkovo_divadlo%2C_park_p%C5%99ed_divadlem_%286913%29.jpg",
+      "time_period": "1.1.1965",
+      "categories": "museums_galeries_theatres",
+      "link": "https://cs.wikipedia.org/wiki/Jan%C3%A1%C4%8Dkovo_divadlo"
+    },
+    {
+      "name": "Měnínská brána",
+      "description": "Jediná dochovaná brána brněnského městského opevnění.",
+      "longitude": 16.6127345,
+      "latitude": 49.1942491,
+      "photo_url": "http://www.pruvodcebrnem.cz/fotografie/historicke-stavby/meninska-brana/meninska-brana-3.jpg",
+      "time_period": "1.1.1500",
+      "categories": "architecture",
+      "link": "https://cs.wikipedia.org/wiki/M%C4%9Bn%C3%ADnsk%C3%A1_br%C3%A1na"
+    },
+    {
+      "name": "Denisovy sady",
+      "description": "Park, z něhož je nádherný výhled na Brno a jeho okolí.",
+      "longitude": 16.6059235,
+      "latitude": 49.1910031,
+      "photo_url": "https://www.gotobrno.cz/wp-content/uploads/2017/06/denisovy-sady-gabzdyl.jpg",
+      "time_period": "1.1.1814",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Denisovy_sady"
+    },
+    {
+      "name": "Park Špilberk",
+      "description": "Velký park na kopci pod stejnojmenným hradem.",
+      "longitude": 16.6009729,
+      "latitude": 49.1946179,
+      "photo_url": "https://ticbrno.cz/sites/default/files/plakat-predprodej/2017/park-spilberk.jpg",
+      "time_period": "1.1.1861",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Park_%C5%A0pilberk"
+    },
+    {
+      "name": "Otevřená zahrada",
+      "description": "Naučná zahrada a současné ekologické trendy ve stavitelství.",
+      "longitude": 16.5962792,
+      "latitude": 49.1970416,
+      "photo_url": "https://www.gotobrno.cz/wp-content/uploads/2017/05/otevrena-zahrada-brno-2-e1503664827624.jpg",
+      "time_period": "1.1.2012",
+      "categories": "nature;architecture",
+      "link": "https://cs.wikipedia.org/wiki/Otev%C5%99en%C3%A1_zahrada"
+    },
+    {
+      "name": "Park Lužánky",
+      "description": "Lužánky jsou nejstarším a největším brněnským parkem.",
+      "longitude": 16.6079075,
+      "latitude": 49.2068071,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Brno-Lu%C5%BE%C3%A1nky_XIV.jpg/1200px-Brno-Lu%C5%BE%C3%A1nky_XIV.jpg",
+      "time_period": "1.1.1786",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Lu%C5%BE%C3%A1nky"
+    },
+    {
+      "name": "Tyršův sad",
+      "description": "Veřejný park na místě zrušeného městského hřbitova.",
+      "longitude": 16.6026969,
+      "latitude": 49.2031762,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Tyr%C5%A1%C5%AFv-sad-Brno2012.jpg/1200px-Tyr%C5%A1%C5%AFv-sad-Brno2012.jpg",
+      "time_period": "1.1.1908",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Tyr%C5%A1%C5%AFv_sad_(Brno)"
+    },
+    {
+      "name": "Botanická zahrada Přírodovědecké fakulty MU",
+      "description": "Celoročně přístupný areál se nachází nedaleko centra.",
+      "longitude": 16.596537,
+      "latitude": 49.204093,
+      "photo_url": "http://www.toulejse.cz/images/photogallery/396/full_image_525bb205aefcd.JPG",
+      "time_period": "1.1.1922",
+      "categories": "nature",
+      "link": "http://www.sci.muni.cz/bot_zahr/index.php/cs-CZ/"
+    },
+    {
+      "name": "Botanická zahrada a arboretum Mendelovy univerzity",
+      "description": "Výukové a účelové zařízení v Černých Polích.",
+      "longitude": 16.6151501,
+      "latitude": 49.2139659,
+      "photo_url": "http://botany.cz/foto2/mzlu7.jpg",
+      "time_period": "1.1.1938",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Botanick%C3%A1_zahrada_a_arboretum_Mendelovy_univerzity_v_Brn%C4%9B"
+    },
+    {
+      "name": "Brněnská přehrada",
+      "description": "Vyhledávané místo pro sport, rekreaci a odpočinek.",
+      "longitude": 16.511738,
+      "latitude": 49.236745,
+      "photo_url": "http://www.prygl.net/foto/prehrada-podzim_v.jpg",
+      "time_period": "1.1.1940",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%A1_p%C5%99ehrada"
+    },
+    {
+      "name": "Mariánské údolí",
+      "description": "Lesy a vodní nádrže na východním okraji Brna.",
+      "longitude": 16.710495,
+      "latitude": 49.2115768,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Autumn_Marian_Valley.jpg",
+      "time_period": "1.1.1953",
+      "categories": "nature",
+      "link": "https://cs.wikipedia.org/wiki/Mari%C3%A1nsk%C3%A9_%C3%BAdol%C3%AD_(Brno)"
+    }
+  ]
+}

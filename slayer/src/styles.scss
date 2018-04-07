@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~nouislider/distribute/nouislider.min.css";
+@import '~@angular/material/theming';
+@include mat-core();
+$primary-color: #d50000;
+$sidenav-color: #38006b;
+$range-color: #6a1b9a;
+$app-default: mat-palette($mat-red);
+$app-default-accent:  mat-palette($mat-red, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$app-default-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-default-theme: mat-light-theme($app-default, $app-default-accent, $app-default-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each
+// component
+// that you are using.
+@include angular-material-theme($app-default-theme);
+
+.noUi-connect {
+  background: #f44336;
+}
+
+
+
+/deep/nouislider {
+  margin-top: 10px !important;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto, sans-serif'
+}
+
+.noUi-value, .noUi-tooltip {
+  font-family: 'Roboto' !important;
+}
+
+.gm-style-iw > div {
+  overflow: hidden !important;
+}
+
+.noUi-pips-horizontal{
+  height: auto;
+}
+
+.noUi-handle{
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px !important;
+  top: -8px !important;
+  right: -10.5px !important;
+  outline: none;
+
+  &:before, &:after{
+    display: none;
+  }
+}
+
+.gm-style-iw {
+  left: 25px !important;
+  right: 0;
+}
+
+.gm-style img {
+  max-height: 280px;
+  width: auto
+}
+
+.noUi-horizontal{
+  height: 5px;
+
+  .noUi-tooltip{
+    padding: 5px !important;
+    border-radius: 5px;
+  }
+}
+
+.noUi-value-sub{
+  font-size: inherit;
+}
+
+.noUi-marker-horizontal.noUi-marker-sub {
+  margin-top: -5px;
+}
+
+.mat-card-avatar {
+  display:none;
+}

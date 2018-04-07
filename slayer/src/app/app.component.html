@@ -1,0 +1,114 @@
+<div class="container">
+  <div class="hide" [ngClass]="{'hidden' : !toolbarVisible}" (click)="toolbarVisible = !toolbarVisible">
+    <i class="material-icons">menu</i>
+  </div>
+  <div class="sidenav" [ngClass]="{'hidden' : !toolbarVisible}">
+    <div class="trip-selector">
+      <div class="title">
+        Trip Planner
+      </div>
+
+      <div class="description" *ngIf="tripPlaces.length === 0">
+        Vyberte prosím místa, která chcete navštívit.
+      </div>
+
+      <div class="list">
+        <div class="item" *ngFor="let item of tripPlaces" (click)="focusPlace(item)">
+          <span class="name">{{item.name}}</span>
+          <span>
+            <span>
+              <i class="material-icons nav-icon" [ngClass]="{'active': first && first.id === item.id}" (click)="setStart(item, $event)">flight_takeoff</i>
+              <i class="material-icons nav-icon" [ngClass]="{'active': last && last.id === item.id}" (click)="setEnd(item, $event)">flight_land</i>
+            </span>
+            <i class="material-icons" (click)="removePlace(item, $event)">delete</i>
+          </span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button mat-raised-button
+                [disabled]="first == null || last == null"
+                type="button" color="primary"
+                *ngIf="tripPlaces.length > 0"
+                (click)="planTrip()">
+          Naplánovat cestu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="map-container">
+      <agm-map
+        [latitude]="coordinates.lat"
+        [longitude]="coordinates.lng"
+        [zoom]="zoom"
+        [styles]="style | async"
+        [disableDefaultUI]="false"
+        [zoomControl]="false"
+        (mapClick)="mapClicked($event)">
+
+        <agm-marker
+          #marker
+          *ngFor="let m of filteredPlaces;"
+          (markerClick)="clickedMarker(info)"
+          [openInfoWindow]="false"
+          [latitude]="m.coordinates.lat"
+          [longitude]="m.coordinates.lng"
+          [title]="m.name"
+          [iconUrl]="m.iconUrl">
+
+    <agm-info-window #info>
+      <div  class="map-title">{{m.name}}</div>
+        <div class="info-card">
+        <div class="center-cropped">
+        <img  [src]="m.photo_url" [alt]="m.name" class="thumbnail">
+        </div>
+          <div class="description">
+          <span>{{m.description}}</span>
+          <p *ngIf="m.price != null">Vstup: {{m.price}}</p>
+          <p><a  href="{{m.link}}"class="more-info">Další info</a></p>
+        </div>
+        </div>
+      <div class="buttons">
+          <button mat-raised-button color="primary"(click)="addToTrip(m, info)">{{isInTrip(m.id) ? 'Odebrat z plánu' : 'Přidat do plánu'}}</button>
+        </div>
+    </agm-info-window>
+  </agm-marker>
+
+          <agm-direction *ngFor="let dir of walking_dirs"
+                         [renderOptions]="options"
+                         [origin]="dir.origin"
+                         [visible]="visible"
+                         [destination]="dir.destination"
+                         [waypoints]="dir.waypoints"
+                         travelMode="WALKING">
+          </agm-direction>
+
+          <agm-direction *ngFor="let dir of transit_dirs"
+                         [origin]="dir.origin"
+                         [visible]="visible"
+                         [renderOptions]="options"
+                         [destination]="dir.destination"
+                         [waypoints]="dir.waypoints"
+                         travelMode="TRANSIT">
+          </agm-direction>
+
+      </agm-map>
+    </div>
+    <div class="filter-container">
+      <mat-form-field class="category">
+        <mat-select placeholder="Kategorie" multiple (selectionChange)="handleCategories($event)">
+          <mat-option *ngFor="let category of categories" [value]="category.value">{{category.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div style="width: 100%">
+        <nouislider class="slider-el" [config]="config" (ngModelChange)="handleTime($event)" [ngModel]="someRange"></nouislider>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
