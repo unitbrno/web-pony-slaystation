@@ -1,1 +1,1 @@
-from .calc import get_clusters
+from .calc import get_clusters, Point

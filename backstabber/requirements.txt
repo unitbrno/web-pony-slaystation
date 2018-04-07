@@ -4,3 +4,4 @@ SQLAlchemy==1.2.5
 requests==2.14.2
 marshmallow==2.15.0
 flask-cors==3.0.3
+googlemaps==2.5.1
