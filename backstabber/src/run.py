@@ -76,7 +76,7 @@ def clusterize() -> dict:
         if not valid_point(p):
             raise ValidationError(
                 errors=dict(objects='all points must have at least latitude and longitude attributes'))
-    clusters = get_clusters(points=points, max_dist=250)
+    clusters = get_clusters(points=points, max_dist=500)
     return make_response(jsonify(dict(clusters=clusters)))
 
 
