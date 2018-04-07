@@ -2,6 +2,9 @@ $background-color: #bc3338;
 $primary-color: #d50000;
 $secondary-color: #d50000;
 
+$sidenav-color: #0091ea;
+$range-color: #f5f5f5;
+
 $text-color: #eeeeee;
 
 $footer-height: 100px;
@@ -24,6 +27,9 @@ agm-map{
   max-width: 100%;
 }
 
+/deep/.noUi-value {
+  color: black !important;
+}
 
 
 .example-card {
@@ -69,7 +75,7 @@ agm-map{
   left: 0;
   right: 0;
   max-width: 25vw;
-  background-color: $primary-color;
+  background-color: $sidenav-color;
 }
 
 .content{
@@ -108,7 +114,7 @@ agm-map{
 
   .sidenav{
 
-    background-color: $background-color;
+    background-color: $sidenav-color;
     padding: 26px 10px 10px 10px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     width: 250px;
@@ -178,7 +184,7 @@ agm-map{
 }
 
 .slider{
-  background-color: $background-color;
+  background-color: $range-color;
   height: $footer-height;
   width: 100%;
   box-sizing: border-box;
