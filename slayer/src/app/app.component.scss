@@ -36,6 +36,14 @@ agm-map{
   max-width: 400px;
 }
 
+/deep/.map-title {
+  font-size: 20px !important;
+  text-transform: none;
+}
+/deep/nouislider {
+  margin-top: 10px !important;
+}
+
 .info-card{
   display: flex;
   justify-content: flex-start;

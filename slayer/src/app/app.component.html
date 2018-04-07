@@ -9,7 +9,7 @@
       </div>
 
       <div class="description" *ngIf="tripPlaces.length === 0">
-        Please select places you would like to visit...
+        Vyberte prosím místa, která chcete navštívit.
       </div>
 
       <div class="list">
@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="buttons">
-        <button mat-raised-button color="primary" (click)="addToTrip(m, info)">{{isInTrip(m.id) ? 'Remove from trip' : 'Add to trip'}}</button>
+        <button mat-raised-button color="primary" (click)="addToTrip(m, info)">{{isInTrip(m.id) ? 'Odebrat z plánu' : 'Přidat do plánu'}}</button>
       </div>
     </agm-info-window>
   </agm-marker>

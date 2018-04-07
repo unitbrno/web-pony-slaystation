@@ -67,8 +67,8 @@
     {
       "name": "Moravská banka",
       "description": "Funkcionalistická budova na náměstí Svobody.",
-      "longitude": 16.6059319,
-      "latitude": 49.1947499,
+      "longitude": 16.6064071,
+      "latitude": 49.1950882,
       "photo_url": "http://www.pruvodcebrnem.cz/fotografie/namesti-a-parky/namesti-svobody/namesti-svobody-6.jpg",
       "time_period": "1.1.1928",
       "categories": "architecture",
@@ -191,8 +191,8 @@
     {
       "name": "Mincmistrovský sklep",
       "description": "Historie mincovnictví ve sklepení pod Dominikánským náměstím.",
-      "longitude": 16.6037193,
-      "latitude": 49.1943092,
+      "longitude": 16.6059344,
+      "latitude": 49.1940217,
       "photo_url": "http://img14.rajce.idnes.cz/d1403/8/8158/8158763_eb184c51114fc25096fcdf4be6503d16/images/Mincmistrovsky_sklep_026.jpg",
       "time_period": "1.1.2010",
       "categories": "underground;tour",
@@ -208,7 +208,7 @@
       "time_period": "1.1.1710",
       "categories": "underground;tour",
       "price": "od 70 Kč do 140 Kč",
-      "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%A1_kostnice"
+      "link": "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%A1_kostnice"
     },
     {
       "name": "Kostel sv. Jakuba",
@@ -643,8 +643,8 @@
     {
       "name": "Botanická zahrada Přírodovědecké fakulty MU",
       "description": "Celoročně přístupný areál se nachází nedaleko centra.",
-      "longitude": 16.5264974,
-      "latitude": 49.2040718,
+      "longitude": 16.596537,
+      "latitude": 49.204093,
       "photo_url": "http://www.toulejse.cz/images/photogallery/396/full_image_525bb205aefcd.JPG",
       "time_period": "1.1.1922",
       "categories": "nature",

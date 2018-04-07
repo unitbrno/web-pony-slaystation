@@ -24,9 +24,7 @@ $app-default-theme: mat-light-theme($app-default, $app-default-accent, $app-defa
   background: $primary-color;
 }
 
-.map-title {
-  font-size: 20px;
-}
+
 
 /deep/nouislider {
   margin-top: 10px !important;
