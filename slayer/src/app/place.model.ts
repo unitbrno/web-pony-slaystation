@@ -1,19 +1,19 @@
 import { LatLngLiteral } from '@agm/core';
 
 export interface PlaceModel {
-  categories: string;
-  category_list: string[];
-  description: string;
-  id: number;
-  latitude: number;
-  link: string;
-  longitude: number;
+  categories?: string;
+  category_list?: string[];
+  description?: string;
+  id?: number;
+  latitude?: number;
+  link?: string;
+  longitude?: number;
   name: string;
-  photo_url: string;
-  price: string;
-  time_period: string;
+  photo_url?: string;
+  price?: string;
+  time_period?: string;
   coordinates: LatLngLiteral;
-  iconUrl: string;
+  iconUrl?: string;
 }
 
 export interface ApiPlaceModel {
