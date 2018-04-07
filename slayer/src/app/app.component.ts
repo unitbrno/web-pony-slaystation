@@ -46,6 +46,12 @@ export class AppComponent {
     tooltips: [true, true],
   };
 
+  visible = false;
+
+  options  = {
+    suppressMarkers: true
+  };
+
   readonly categories = [
     {
       label: 'Architektura',
@@ -119,6 +125,13 @@ export class AppComponent {
   addToTrip(m: PlaceModel, content): void {
     if (this.isInTrip(m.id)) {
       this.tripPlaces = this.tripPlaces.filter(item => item.id !== m.id);
+      if(this.first && this.first.id === m.id){
+        this.first = null;
+      }
+
+      if(this.last && this.last.id === m.id){
+        this.last = null;
+      }
     } else {
       this.tripPlaces = [...this.tripPlaces, m];
     }
@@ -137,6 +150,13 @@ export class AppComponent {
   removePlace(m: PlaceModel, event: MouseEvent): void {
     this.tripPlaces = this.tripPlaces.filter(item => item.id !== m.id);
     this.updateIcon(m);
+    if(this.first && this.first.id === m.id){
+      this.first = null;
+    }
+
+    if(this.last && this.last.id === m.id){
+      this.last = null;
+    }
     event.stopPropagation();
   }
 
@@ -151,12 +171,13 @@ export class AppComponent {
   }
 
   planTrip() {
-    console.log(this.tripPlaces.map(place => place.coordinates));
-    console.log('sorted', this.sortedTripPlaces);
+
+    this.walking_dirs = [];
+    this.transit_dirs = [];
+    this.visible = false;
 
     this.placeService.getClusters(this.sortedTripPlaces).subscribe(
       (data: ClusterModel[]) => {
-        console.log(data);
 
         this.walking_dirs = [];
         this.transit_dirs = [];
@@ -179,6 +200,7 @@ export class AppComponent {
             });
           }
         }
+        this.visible = true;
       }
     );
   }
