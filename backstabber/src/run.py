@@ -1,7 +1,8 @@
-from flask import after_this_request
+from flask import after_this_request, request, make_response, jsonify
 from flask_restless import APIManager
 
 from app import FlaskApp, DB, ValidationError
+from handlers import get_clusters
 from models import EventRecord, Record
 
 # create database
@@ -45,14 +46,34 @@ manager.create_api(
 manager.create_api(
     Record,
     methods=['GET', 'POST', 'PUT', 'DELETE'],
-    validation_exceptions = [ValidationError],
+    validation_exceptions=[ValidationError],
 )
 
 
 @FlaskApp.route('/', methods=['GET'])
-def get_albums() -> str:
+def welcome() -> str:
     """ Welcome message """
     return 'Welcome to Pony Staystation, a place where no pony is safe. *EVIL LAUGHTER*'
+
+
+@FlaskApp.route('/clusterize', methods=['POST'])
+def clusterize() -> dict:
+    def valid_point(d):
+        if not 'latitude' in d.keys() or not 'longitude' in d.keys():
+            return False
+        return True
+
+    data = request.get_json()
+    points = data.get('objects', [])
+    if len(points) < 2:
+        return make_response(jsonify(dict(clusters=[dict(points=points)])))
+
+    for p in points:
+        if not valid_point(p):
+            raise ValidationError(
+                errors=dict(objects='all points must have at least latitude and longitude attributes'))
+    clusters = get_clusters(points=points, max_dist=250)
+    return make_response(jsonify(dict(clusters=clusters)))
 
 
 # start the flask loop
