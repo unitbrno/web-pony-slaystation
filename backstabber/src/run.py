@@ -1,5 +1,6 @@
 from flask import after_this_request, request, make_response, jsonify
 from flask_restless import APIManager
+from flask_cors import cross_origin
 
 from app import FlaskApp, DB, ValidationError
 from handlers import get_clusters
@@ -56,7 +57,8 @@ def welcome() -> str:
     return 'Welcome to Pony Staystation, a place where no pony is safe. *EVIL LAUGHTER*'
 
 
-@FlaskApp.route('/clusterize', methods=['POST'], validation_exceptions=[ValidationError])
+@FlaskApp.route('/clusterize', methods=['POST'])
+@cross_origin()
 def clusterize() -> dict:
     def valid_point(d):
         if not 'latitude' in d.keys() or not 'longitude' in d.keys():
