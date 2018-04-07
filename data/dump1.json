@@ -5,7 +5,7 @@
       "description": "Secesní vila, výjimečná v celosvětovém měřítku. Tato zásadní památka secesní architektury má v Brně podobný význam jako funkcionalistické vily.",
       "longitude": 16.576142,
       "latitude": 49.206611,
-      "photo_url": "https://cs.wikipedia.org/wiki/Jurkovi%C4%8Dova_vila#/media/File:Jurkovi%C4%8Dova_vila_Brno_1.jpg",
+      "photo_url": "http://www.moravska-galerie.cz/media/1736527/jurkovicova_vila_zahrada.jpg",
       "time_period": "1.1.1906",
       "price": "100 Kč",
       "categories": "architecture;tour",
@@ -169,8 +169,8 @@
     {
       "name": "Labyrint pod Zelným trhem",
       "description": "Téměř kilometrový labyrint středověkých chodeb a sklepů.",
-      "longitude": 16.5781438,
-      "latitude": 49.1918972,
+      "longitude": 16.6094358,
+      "latitude": 49.1929343,
       "photo_url": "https://ticbrno.cz/sites/default/files/foto-mista/2014/labyrint_pod_zelnym_trhem_03.jpg",
       "time_period": "1.1.1630",
       "categories": "underground;tour",
@@ -208,7 +208,7 @@
       "time_period": "1.1.1710",
       "categories": "underground;tour",
       "price": "od 70 Kč do 140 Kč",
-      "link": "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%A1_kostnice"
+      "https://cs.wikipedia.org/wiki/Brn%C4%9Bnsk%C3%A1_kostnice"
     },
     {
       "name": "Kostel sv. Jakuba",
@@ -273,8 +273,8 @@
     {
       "name": "Kostel Nanebevzetí Panny Marie",
       "description": "Pozůstatek jezuitské koleje zbourané na zač. 20. století.",
-      "longitude": 16.5400864,
-      "latitude": 49.1967338,
+      "longitude": 16.6100465,
+      "latitude": 49.1969572,
       "photo_url": "http://nd06.jxs.cz/015/124/0f117cd2d9_92193196_o2.jpg",
       "time_period": "1.1.1241",
       "categories": "castles_churches;architecture",
@@ -323,8 +323,8 @@
     {
       "name": "Socha Markrabě Jošta Lucemburského",
       "description": "Jedna z nejnovějších brněnských soch vzbudila velké kontroverze.",
-      "longitude": 16.6021264,
-      "latitude": 49.1982648,
+      "longitude": 16.6075466,
+      "latitude": 49.1976491,
       "photo_url": "http://www.jaroslav-rona.cz/storage/cache/images/000/883/IMG-7381-copy3,medium.1483532334.jpg",
       "time_period": "1.1.2015",
       "categories": "statue",
@@ -333,8 +333,8 @@
     {
       "name": "Socha spravedlnosti",
       "description": "Další rozporuplná instalace na Moravském náměstí.",
-      "longitude": 16.604903,
-      "latitude": 49.1974865,
+      "longitude": 16.6071341,
+      "latitude": 49.1975847,
       "photo_url": "https://foto.turistika.cz/foto/11885/83140/full_362bcc_img_9981.jpg",
       "time_period": "1.1.2010",
       "categories": "statue",
@@ -353,8 +353,8 @@
     {
       "name": "Liška Bystrouška",
       "description": "Socha titulní postavy ze světoznámé Janáčkovy opery.",
-      "longitude": 16.5328073,
-      "latitude": 49.2012963,
+      "longitude": 16.6028469,
+      "latitude": 49.2013175,
       "photo_url": "https://g.denik.cz/50/9c/liska_bystrouska_osu_denik-630.jpg",
       "time_period": "1.1.1983",
       "categories": "statue",
@@ -363,8 +363,8 @@
     {
       "name": "Socha Mima",
       "description": "Socha vytvořená v roce 1986 stojí před Bílým domem.",
-      "longitude": 16.6011182,
-      "latitude": 49.1985316,
+      "longitude": 16.6033122,
+      "latitude": 49.1985281,
       "photo_url": "https://foto.turistika.cz/foto/r/900/11885/90836/lrg_img_0739.jpg",
       "time_period": "1.1.1986",
       "categories": "statue",
@@ -454,8 +454,8 @@
     {
       "name": "Moravské zemské muzeum",
       "description": "Druhá nejrozsáhlejší a druhá nejstarší muzejní instituce v ČR.",
-      "longitude": 16.5384185,
-      "latitude": 49.1918363,
+      "longitude": 16.6084581,
+      "latitude": 49.1918575,
       "photo_url": "https://foto.turistika.cz/foto/r/550/11885/130615/lrg_img_49262.jpg",
       "time_period": "1.1.1817",
       "categories": "museums_galeries_theatres;tour",
@@ -653,8 +653,8 @@
     {
       "name": "Botanická zahrada a arboretum Mendelovy univerzity",
       "description": "Výukové a účelové zařízení v Černých Polích.",
-      "longitude": 16.5451105,
-      "latitude": 49.2139447,
+      "longitude": 16.6151501,
+      "latitude": 49.2139659,
       "photo_url": "http://botany.cz/foto2/mzlu7.jpg",
       "time_period": "1.1.1938",
       "categories": "nature",
@@ -663,8 +663,8 @@
     {
       "name": "Brněnská přehrada",
       "description": "Vyhledávané místo pro sport, rekreaci a odpočinek.",
-      "longitude": 16.4508066,
-      "latitude": 49.2520503,
+      "longitude": 16.511738,
+      "latitude": 49.236745,
       "photo_url": "http://www.prygl.net/foto/prehrada-podzim_v.jpg",
       "time_period": "1.1.1940",
       "categories": "nature",
