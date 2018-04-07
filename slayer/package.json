@@ -24,6 +24,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@google/maps": "^0.4.6",
     "agm-direction": "^0.4.1",
     "core-js": "^2.4.1",
     "moment": "^2.22.0",

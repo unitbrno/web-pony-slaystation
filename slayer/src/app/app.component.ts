@@ -5,6 +5,8 @@ import { PlaceModel } from './place.model';
 import { PlacesService } from './places.service';
 import { MatSelectChange } from '@angular/material';
 import * as moment from 'moment';
+import {ClusterModel} from './cluster.model';
+
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ export class AppComponent {
   coordinates = {lat: 49.194964, lng: 16.608786};
 
   tripPlaces: PlaceModel[] = [];
-  dir = undefined;
+
+  walking_dirs = [];
+  transit_dirs = [];
 
   originalPlaces: PlaceModel[] = [];
   filteredPlaces: PlaceModel[] = [];
@@ -149,22 +153,34 @@ export class AppComponent {
   planTrip() {
     console.log(this.tripPlaces.map(place => place.coordinates));
     console.log('sorted', this.sortedTripPlaces);
-    this.dir = {
-      origin: this.directionStart,
-      destination: this.directionEnd,
-      waypoints: this.tripPlaces
-        .filter(item =>
-          item.coordinates !== this.directionEnd
-          && item.coordinates !== this.directionStart
-        )
-        .map(
-          place => {
-            return {
-              location: place.coordinates,
-              stopover: true
-            };
-          })
-    };
+
+    this.placeService.getClusters(this.sortedTripPlaces).subscribe(
+      (data: ClusterModel[]) => {
+        console.log(data);
+
+        this.walking_dirs = [];
+        this.transit_dirs = [];
+
+        for (let i = 0; i < data.length - 1; i++) {
+          this.transit_dirs.push({
+            origin: <LatLngLiteral>{ lat: data[i].coords.lat, lng: data[i].coords.lon },
+            destination: <LatLngLiteral>{ lat: data[i + 1].coords.lat, lng: data[i + 1].coords.lon }
+          });
+
+          if (data[i].points.length > 1) {
+            this.walking_dirs.push({
+              origin: <LatLngLiteral>{ lat: data[i].coords.lat, lng: data[i].coords.lon },
+              destination: <LatLngLiteral>{ lat: data[i].coords.lat, lng: data[i].coords.lon },
+              waypoints: data[i].points
+                                .map(item => ({
+                                    location: <LatLngLiteral>{ lat: item.latitude, lng: item.longitude },
+                                    stopover: true
+                                }))
+            });
+          }
+        }
+      }
+    );
   }
 
   handleCategories(event: MatSelectChange): void {

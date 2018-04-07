@@ -76,12 +76,21 @@
     </agm-info-window>
   </agm-marker>
 
-        <agm-direction *ngIf="dir"
+
+        <agm-direction *ngFor="let dir of walking_dirs"
                        [origin]="dir.origin"
                        [destination]="dir.destination"
                        [waypoints]="dir.waypoints"
                        travelMode="WALKING">
         </agm-direction>
+
+        <agm-direction *ngFor="let dir of transit_dirs"
+                       [origin]="dir.origin"
+                       [destination]="dir.destination"
+                       [waypoints]="dir.waypoints"
+                       travelMode="TRANSIT">
+        </agm-direction>
+
       </agm-map>
     </div>
     <div class="filter-container">

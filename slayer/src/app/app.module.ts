@@ -8,6 +8,7 @@ import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 import {AgmDirectionModule} from 'agm-direction';
 import { PlacesService } from './places.service';
+import {GoogleDirectionsService} from "./google-directions.service";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PlacesService } from './places.service';
     HttpClientModule,
   ],
   providers: [
-    PlacesService
+    PlacesService,
+    GoogleDirectionsService
   ],
   bootstrap: [AppComponent]
 })
