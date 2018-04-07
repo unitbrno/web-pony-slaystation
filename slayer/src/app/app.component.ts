@@ -31,10 +31,10 @@ export class AppComponent {
       min: 1000,
       max: 2018
     },
-    step: 100,
+    step: 10,
     pips: {
-      mode: 'steps',
-      density: 20
+      mode: 'range',
+      density: 5
     },
     tooltips: [true, true],
   };

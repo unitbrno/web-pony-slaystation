@@ -21,7 +21,7 @@ $app-default-theme: mat-light-theme($app-default, $app-default-accent, $app-defa
 @include angular-material-theme($app-default-theme);
 
 .noUi-connect {
-  background: $primary-color;
+  background: #f44336;
 }
 
 
