@@ -76,20 +76,23 @@
     </agm-info-window>
   </agm-marker>
 
+          <agm-direction *ngFor="let dir of walking_dirs"
+                         [renderOptions]="options"
+                         [origin]="dir.origin"
+                         [visible]="visible"
+                         [destination]="dir.destination"
+                         [waypoints]="dir.waypoints"
+                         travelMode="WALKING">
+          </agm-direction>
 
-        <agm-direction *ngFor="let dir of walking_dirs"
-                       [origin]="dir.origin"
-                       [destination]="dir.destination"
-                       [waypoints]="dir.waypoints"
-                       travelMode="WALKING">
-        </agm-direction>
-
-        <agm-direction *ngFor="let dir of transit_dirs"
-                       [origin]="dir.origin"
-                       [destination]="dir.destination"
-                       [waypoints]="dir.waypoints"
-                       travelMode="TRANSIT">
-        </agm-direction>
+          <agm-direction *ngFor="let dir of transit_dirs"
+                         [origin]="dir.origin"
+                         [visible]="visible"
+                         [renderOptions]="options"
+                         [destination]="dir.destination"
+                         [waypoints]="dir.waypoints"
+                         travelMode="TRANSIT">
+          </agm-direction>
 
       </agm-map>
     </div>
