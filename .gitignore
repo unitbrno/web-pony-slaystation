@@ -8,3 +8,7 @@ __pycache__/
 
 # local files
 malformed.json
+
+# Angular
+node_modules/
+

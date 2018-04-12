@@ -4,8 +4,8 @@ import sys
 
 import requests
 
-RECORDS_URL = "http://35.198.94.71:5000/api/record"
-# RECORDS_URL = "http://0.0.0.0:5000/api/record"  # use this locally
+# RECORDS_URL = "http://35.198.94.71:5000/api/record"
+RECORDS_URL = "http://localhost:5000/api/record"  # use this locally
 
 
 def check_obj(obj):

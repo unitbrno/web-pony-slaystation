@@ -6,7 +6,7 @@ import { ApiPlaceModel, PlaceModel } from './place.model';
 import {ClusterModel, ClusterRequestModel, ClustersResponseModel} from './cluster.model';
 import {map} from "rxjs/operators";
 
-const URL = 'http://35.198.94.71:5000';
+const URL = 'http://localhost:5000';
 
 @Injectable()
 export class PlacesService {
